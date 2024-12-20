@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Thikkal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fbe7f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px;
+        }
+        .heart {
+            font-size: 5em;
+            color: #ff69b4;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sorry, Thikkal ❤️</h1>
+    <p>Hey Thikkal, I'm really sorry for what happened. You are my best friend, and I can't imagine my life without you.</p>
+    <p class="heart">❤️</p>
+    <p>Let's make things better and cherish our friendship forever.</p>
+    <button onclick="revealMessage()">Click for a Surprise!</button>
+    <p id="secretMessage" style="display:none; margin-top: 20px;">You are the best, Thikkal! Let's stay awesome together! 🌟</p>
+    <script>
+        function revealMessage() {
+            document.getElementById('secretMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
